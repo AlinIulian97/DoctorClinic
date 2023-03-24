@@ -5,25 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f79f014b-1552-46ed-992c-96d519db13a0" name="Changes" comment="Init">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beams/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beams/controller/DoctorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beams/entity/Consult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beams/entity/Doctor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beams/entity/Enums/SpecializationEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beams/exception/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beams/mapper/DoctorMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beams/model/DoctorRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beams/model/DoctorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beams/repository/DoctorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beams/service/DoctorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beams/model/DoctorUpdate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beams/controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beams/controller/DoctorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beams/entity/Consult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beams/entity/Consult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beams/repository/DoctorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beams/repository/DoctorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beams/service/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beams/service/DoctorService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +133,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/beams/controller/DoctorController.java</url>
-          <line>14</line>
+          <line>16</line>
           <properties class="beams.controller.DoctorController" method="createDoctor">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -154,7 +142,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/beams/controller/DoctorController.java</url>
-          <line>15</line>
+          <line>17</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

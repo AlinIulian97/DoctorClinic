@@ -5,6 +5,7 @@ import beams.exception.BusinessException;
 import beams.mapper.DoctorMapper;
 import beams.model.DoctorRequest;
 import beams.model.DoctorResponse;
+import beams.model.DoctorUpdate;
 import beams.repository.DoctorRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -28,9 +29,28 @@ public class DoctorService {
         return doctorMapper.map(doctorToSave);
     }
 
-    public void deleteDoctor(Integer id){
+    public void deleteDoctor(Long id){
         doctorRepository.delete
                 (doctorRepository.findById(id).orElseThrow(()
                         -> new BusinessException("This doctor is not found")));
     }
+
+    public void updateDoctor(Long id, DoctorUpdate doctorUpdate){
+        Doctor doctorToUpdate = doctorRepository
+                .findById(id)
+                .orElseThrow(
+                () -> new BusinessException("Doctor is not found"));
+
+        doctorToUpdate.setExperience(doctorUpdate.getExperience());
+        doctorToUpdate.setDescription(doctorUpdate.getDescription());
+        doctorRepository.save(doctorToUpdate);
+    }
+
+   public DoctorResponse findDoctor(Long id){
+    return doctorMapper.map(doctorRepository
+            .findById(id)
+            .orElseThrow(
+                    ()-> new BusinessException("Doctor is not found")));
+   }
+
 }
