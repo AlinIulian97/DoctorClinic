@@ -39,7 +39,7 @@ public class Doctor {
     @Column
     private String university;
 
-    @OneToMany(cascade = CascadeType.ALL , mappedBy = "doctor")
+    @OneToMany(cascade = CascadeType.ALL , mappedBy = "doctor" , fetch = FetchType.EAGER)
     private final List<Consult> consult= new ArrayList<>();
 
 }
