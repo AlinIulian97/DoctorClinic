@@ -1,4 +1,4 @@
-package beams.model;
+package beams.model.doctor;
 
 import lombok.Data;
 

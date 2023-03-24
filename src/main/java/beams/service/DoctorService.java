@@ -3,16 +3,14 @@ package beams.service;
 import beams.entity.Doctor;
 import beams.exception.BusinessException;
 import beams.mapper.DoctorMapper;
-import beams.model.DoctorRequest;
-import beams.model.DoctorResponse;
-import beams.model.DoctorUpdate;
+import beams.model.doctor.DoctorRequest;
+import beams.model.doctor.DoctorResponse;
+import beams.model.doctor.DoctorUpdate;
 import beams.repository.DoctorRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import javax.print.Doc;
 import javax.transaction.Transactional;
-import java.sql.SQLException;
 
 @Service
 @Transactional

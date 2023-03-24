@@ -4,13 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f79f014b-1552-46ed-992c-96d519db13a0" name="Changes" comment="Init">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beams/model/DoctorUpdate.java" afterDir="false" />
+    <list default="true" id="f79f014b-1552-46ed-992c-96d519db13a0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/beams/controller/ConsultController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beams/mapper/ConsultMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beams/model/consult/ConsultRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beams/model/consult/ConsultResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beams/repository/ConsultRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beams/service/ConsultService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/beams/controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beams/controller/DoctorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/beams/entity/Consult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beams/entity/Consult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/beams/repository/DoctorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beams/repository/DoctorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beams/entity/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beams/entity/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beams/mapper/DoctorMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beams/mapper/DoctorMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beams/model/DoctorRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beams/model/doctor/DoctorRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beams/model/DoctorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beams/model/doctor/DoctorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beams/model/DoctorUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beams/model/doctor/DoctorUpdate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/beams/service/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beams/service/DoctorService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679596038201</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Doctor_CRUD_CREATE">
+      <created>1679645417699</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679645417699</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,7 +141,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init" />
+    <MESSAGE value="Doctor_CRUD_CREATE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Doctor_CRUD_CREATE" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -140,12 +156,35 @@
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/beams/service/ConsultService.java</url>
+          <line>22</line>
+          <properties class="beams.service.ConsultService" method="createConsult">
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/beams/controller/DoctorController.java</url>
           <line>17</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/beams/service/ConsultService.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/beams/service/ConsultService.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="beams.model.consult.ConsultRequest" memberName="doctor" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

@@ -1,8 +1,8 @@
 package beams.mapper;
 
 import beams.entity.Doctor;
-import beams.model.DoctorRequest;
-import beams.model.DoctorResponse;
+import beams.model.doctor.DoctorRequest;
+import beams.model.doctor.DoctorResponse;
 import org.mapstruct.Mapper;
 
 @Mapper

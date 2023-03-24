@@ -1,15 +1,18 @@
 package beams.entity;
 
 import beams.entity.Enums.SpecializationEnum;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity(name = "doctor")
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 public class Doctor {
 
@@ -35,5 +38,8 @@ public class Doctor {
 
     @Column
     private String university;
+
+    @OneToMany(cascade = CascadeType.ALL , mappedBy = "doctor")
+    private final List<Consult> consult= new ArrayList<>();
 
 }

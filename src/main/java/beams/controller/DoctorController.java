@@ -1,8 +1,8 @@
 package beams.controller;
 
-import beams.model.DoctorRequest;
-import beams.model.DoctorResponse;
-import beams.model.DoctorUpdate;
+import beams.model.doctor.DoctorRequest;
+import beams.model.doctor.DoctorResponse;
+import beams.model.doctor.DoctorUpdate;
 import beams.service.DoctorService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

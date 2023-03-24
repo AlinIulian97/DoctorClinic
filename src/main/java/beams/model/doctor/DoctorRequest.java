@@ -1,10 +1,14 @@
-package beams.model;
+package beams.model.doctor;
+
 
 import beams.entity.Enums.SpecializationEnum;
-import lombok.Data;
+import lombok.*;
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Data
-public class DoctorResponse {
+@Builder
+public class DoctorRequest {
 
     private String firstName;
     private String lastName;
@@ -12,4 +16,5 @@ public class DoctorResponse {
     private byte experience;
     private String description;
     private String university;
+
 }
