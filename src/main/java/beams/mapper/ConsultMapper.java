@@ -11,5 +11,6 @@ public interface ConsultMapper {
 
     Consult map(ConsultRequest consultRequest);
     @Mapping(target = "doctorId", source = "doctor.id")
+
     ConsultResponse map(Consult consult);
 }

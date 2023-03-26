@@ -12,4 +12,5 @@ public class ConsultResponse {
     private Doctor doctor;
     private String issueDetails;
     private Long doctorId;
+
 }

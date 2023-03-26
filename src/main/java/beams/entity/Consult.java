@@ -23,10 +23,14 @@ public class Consult {
     @Column(name = "consult_date")
     private LocalDate consultDate;
 
+    @Column(name = "issue_details")
+    private String issueDetails;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "fk_doctor_id", referencedColumnName = "doctor_id")
     private Doctor doctor;
 
-    @Column(name = "issue_details")
-    private String issueDetails;
+    @OneToOne(cascade = CascadeType.ALL , mappedBy = "consult")
+    private MedicalReport medicalReport;
+
 }

@@ -15,5 +15,6 @@ public class ConsultRequest {
     private Doctor doctor;
     private String issueDetails;
     private Long doctorId;
+    private Long reportId;
 
 }

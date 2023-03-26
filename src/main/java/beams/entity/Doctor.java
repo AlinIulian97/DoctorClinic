@@ -2,6 +2,7 @@ package beams.entity;
 
 import beams.entity.Enums.SpecializationEnum;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
 import javax.persistence.*;
@@ -14,6 +15,8 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@JsonIgnoreProperties({"consult" , "reports"})
+
 public class Doctor {
 
     @Id
@@ -39,7 +42,13 @@ public class Doctor {
     @Column
     private String university;
 
-    @OneToMany(cascade = CascadeType.ALL , mappedBy = "doctor" , fetch = FetchType.EAGER)
+
+
+    @OneToMany(cascade = CascadeType.ALL , mappedBy = "doctor" )
     private final List<Consult> consult= new ArrayList<>();
+
+
+    @OneToMany(cascade = CascadeType.ALL,  mappedBy = "doctor")
+    private final List<MedicalReport> reports= new ArrayList<>();
 
 }
