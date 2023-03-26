@@ -23,6 +23,7 @@ public class MedicalReport {
 
     @Column
     private String disease;
+
     @Column
     private String treatment;
 
