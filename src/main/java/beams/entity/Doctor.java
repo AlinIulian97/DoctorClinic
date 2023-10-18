@@ -16,12 +16,11 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 @JsonIgnoreProperties({"consult" , "reports"})
-
 public class Doctor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "doctor_id")
+    @Column(name = "id")
     private Long id;
 
     @Column(name = "first_name")
@@ -42,7 +41,11 @@ public class Doctor {
     @Column
     private String university;
 
+    @Column
+    private String imgUrl;
 
+    @Column(name = "cabinet_name")
+    private String cabinetName;
 
     @OneToMany(cascade = CascadeType.ALL , mappedBy = "doctor" )
     private final List<Consult> consult= new ArrayList<>();

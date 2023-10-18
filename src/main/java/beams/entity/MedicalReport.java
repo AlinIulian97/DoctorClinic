@@ -34,7 +34,7 @@ public class MedicalReport {
     private LocalDate returnToMedic;
 
     @ManyToOne(fetch = FetchType.LAZY )
-    @JoinColumn(name = "fk_doctor_id", referencedColumnName = "doctor_id"  )
+    @JoinColumn(name = "fk_doctor_id", referencedColumnName = "id"  )
     private Doctor doctor;
 
     @OneToOne(fetch = FetchType.LAZY )

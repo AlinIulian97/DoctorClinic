@@ -27,7 +27,7 @@ public class Consult {
     private String issueDetails;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "fk_doctor_id", referencedColumnName = "doctor_id")
+    @JoinColumn(name = "fk_doctor_id", referencedColumnName = "id")
     private Doctor doctor;
 
     @OneToOne(cascade = CascadeType.ALL , mappedBy = "consult")

@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f79f014b-1552-46ed-992c-96d519db13a0" name="Changes" comment="Medical_Report_Create">
-      <change afterPath="$PROJECT_DIR$/src/main/java/beams/model/medicalReport/MedicalReportUpdateTreatment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/beams/controller/MedicalReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beams/controller/MedicalReportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beams/MyDataRestConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beams/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beams/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beams/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beams/entity/Consult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beams/entity/Consult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beams/entity/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beams/entity/Doctor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/beams/entity/MedicalReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beams/entity/MedicalReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/beams/service/MedicalReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beams/service/MedicalReportService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beams/repository/DoctorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beams/repository/DoctorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +27,7 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -38,20 +46,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Antredoc_1/IdeaProjects/DoctorClinic/src/main/java/beams",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.editor"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;SQL&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "SQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="beams.repository" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Antredoc_1\IdeaProjects\DoctorClinic\src\main\java\beams" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Alin\Documents\GitHub\DoctorClinic\src\main\resources" />
     </key>
