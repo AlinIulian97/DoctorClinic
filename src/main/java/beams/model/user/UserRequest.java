@@ -1,8 +1,12 @@
 package beams.model.user;
 
-import lombok.Data;
+import lombok.*;
 
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class UserRequest {
 
     private String password;

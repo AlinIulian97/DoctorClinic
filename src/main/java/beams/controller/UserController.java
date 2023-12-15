@@ -13,8 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/user")
 @RequiredArgsConstructor
 public class UserController {
-    private UserService userService;
-
+    private final UserService userService;
 
     @PostMapping("/create")
     public UserResponse createConsult(@RequestBody UserRequest userRequest){
