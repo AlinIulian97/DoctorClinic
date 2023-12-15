@@ -21,6 +21,8 @@ public class ConsultService {
     private final ConsultMapper consultMapper;
     private final DoctorRepository doctorRepository;
 
+
+
     public ConsultResponse createConsult(ConsultRequest consultRequest) {
         Consult consultToCreate = consultMapper.map(consultRequest);
         consultToCreate.setDoctor(doctorRepository.findById(consultRequest.getDoctorId()).orElseThrow(
